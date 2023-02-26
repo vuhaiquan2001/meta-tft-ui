@@ -6,17 +6,17 @@ const navMenu = [
     {
         name: 'Game Modes',
         children: [
-            { title: 'Hyper Roll', url: '/' },
-            { title: 'Double Up', url: '/' },
-            { title: 'PBE Comps', url: '/' },
+            { title: 'Hyper Roll', url: '/comps' },
+            { title: 'Double Up', url: '/comps' },
+            { title: 'PBE Comps', url: '/comps' },
         ],
     },
     {
         name: 'Stats',
         children: [
-            { title: 'Items', url: '/' },
-            { title: 'Champions', url: '/' },
-            { title: 'Triats', url: '/' },
+            { title: 'Items', url: '/items' },
+            { title: 'Champions', url: '/champs' },
+            { title: 'Triats', url: '/champs' },
         ],
     },
     {

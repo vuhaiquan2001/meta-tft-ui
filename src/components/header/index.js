@@ -66,7 +66,7 @@ function Header() {
                                         </Link>
                                     ) : (
                                         <div
-                                            onClick={() => setCurrentName(nav.name)}
+                                            onClick={() => handleCurrentName(nav.name)}
                                             key={index}
                                             className={`flex items-center h-full relative text-[#d2d2d2] hover:bg-sub font-normal ${
                                                 currentName === nav.name ||
