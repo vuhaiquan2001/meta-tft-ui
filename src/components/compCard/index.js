@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { FaQuestionCircle } from 'react-icons/fa';
+import PopUpNotifyRight from '../popupnotify/popupright';
 import images from '../../assets/imgs';
 
 function CompCard() {
@@ -78,7 +79,7 @@ function CompCard() {
                                     </div>
                                 </div>
                                 <div className="flex flex-row justify-between w-full">
-                                    <div className="flex flex-row flex-wrap justify-start lg:min-w-[368px]">
+                                    <div className="flex flex-row flex-wrap justify-start lg:min-w-[380px]">
                                         {/* unit container */}
                                         {cluster.units_string.split(', ').map((name, index) => {
                                             const champ = gamejson.units.find((item) => item.apiName === name);
@@ -92,7 +93,7 @@ function CompCard() {
                                                             return name === star ? (
                                                                 <div
                                                                     key={index}
-                                                                    className=" flex-col items-center h-12px relative mt-[7px] mb-[5px]"
+                                                                    className=" flex-col items-center h-12px relative"
                                                                 >
                                                                     <img
                                                                         className="absolute top-[-7px]"
@@ -138,7 +139,7 @@ function CompCard() {
                                                 Avg Place:
                                             </span>
                                             <div
-                                                className={`flex items-baseline justify-end font-normal text-base w-10  ml-[10px] mt-[1px] opacity-90 
+                                                className={`flex items-baseline justify-end font-normal text-base w-10  ml-[10px] mt-[1px] group
                                             ${
                                                 avg >= 5
                                                     ? 'text-[#cc4e57]'
@@ -158,7 +159,7 @@ function CompCard() {
                                                 Pick Rate:
                                             </span>
                                             <div
-                                                className={`flex items-baseline justify-end font-normal text-base w-10  ml-[10px] mt-[1px] opacity-90 
+                                                className={`flex items-baseline justify-end font-normal text-base w-10  ml-[10px] mt-[1px] group
                                             ${
                                                 pickrate >= 0.5
                                                     ? 'text-[#cc4e57]'
