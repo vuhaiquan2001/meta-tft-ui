@@ -132,7 +132,6 @@ function Champ() {
                             <tbody className="">
                                 {champs.map((champ, index) => {
                                     const champinfo = gamejson.units.find((item) => item.apiName === champ.unit);
-                                    console.log(champinfo);
                                     return champ.unit ? (
                                         <tr
                                             key={index}

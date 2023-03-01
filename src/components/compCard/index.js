@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { FaQuestionCircle } from 'react-icons/fa';
-import PopUpNotifyRight from '../popupnotify/popupright';
 import images from '../../assets/imgs';
 
 function CompCard() {

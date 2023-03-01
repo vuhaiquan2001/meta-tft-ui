@@ -132,7 +132,6 @@ function Item() {
                             <tbody className="">
                                 {items.map((equip, index) => {
                                     const iteminfo = gamejson.items.find((obj) => String(obj.id) === equip.item);
-                                    console.log(iteminfo);
                                     return equip.item && iteminfo !== undefined ? (
                                         <tr
                                             key={index}
@@ -140,7 +139,7 @@ function Item() {
                                         >
                                             <td className="flex items-center ml-1 px-[.4rem] py-[.6rem]">
                                                 <img
-                                                    className={`border-[1.5px] h-8 w-8 hover:border-[#f0d77e!important]
+                                                    className={` h-8 w-8 hover:border-[#f0d77e!important]
                                                             
                                                             `}
                                                     src={`https://cdn.metatft.com/file/metatft/set8/items/${iteminfo.id}.png`}
@@ -149,7 +148,7 @@ function Item() {
                                                 <span className="ml-1 text-[#cfcfcf]"> {iteminfo.name}</span>
                                             </td>
                                             <td className="text-center text-[#cfcfcf] px-[.4rem] py-[.6rem]">1</td>
-                                            <td className="text-center text-[#cfcfcf] px-[.4rem] py-[.6rem]">
+                                            <td className="text-center text-[#cfcfcf] px-[.4rem] py-[.6rem] text-ellipsis">
                                                 {' '}
                                                 {iteminfo.name}
                                             </td>
